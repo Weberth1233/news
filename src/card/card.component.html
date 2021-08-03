@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="col s12">
+    <div *ngFor="let noticia of noticias" class="card horizontal">
+      <div class="card-image">
+        <img src="https://lorempixel.com/100/190/nature/6" />
+      </div>
+      <div class="card-stacked">
+        <div class="card-content" style="text-align: left; font-weight: bold;">
+          <p style="font-size: 14pt;">{{ noticia.Titulo }}</p>
+          <div class="chip">
+            <img
+              src="https://dcassetcdn.com/design_img/3341073/186620/186620_18376923_3341073_fe7f16e9_image.png"
+              alt="Contact Person"
+            />
+            {{ noticia.Criador }}
+          </div>
+
+          <p>{{ noticia.Desc }}</p>
+          <p style="font-size: 9pt;">
+            Data Publicação: {{ noticia.DataPublic }}
+          </p>
+        </div>
+        <div class="card-action" style="text-align: left;">
+          <a href="#" style="color: red;">Ver mais</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
