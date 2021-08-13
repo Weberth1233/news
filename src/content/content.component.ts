@@ -29,7 +29,7 @@ export class ContentComponent {
       Criador: "Bruno Aguiar"
     },
     {
-      Titulo: "Nova noticia adicionada",
+      Titulo: "Nova notícia adicionada",
       DataPublic: "26/09/2000",
       Desc:
         "A guerra começou e já deixou mais de 10.000 mil feridos ao redor de todo o país",
@@ -41,6 +41,13 @@ export class ContentComponent {
       Desc:
         "A guerra começou e já deixou mais de 10.000 mil feridos ao redor de todo o país",
       Criador: "Teste"
+    },
+    {
+      Titulo: "Flamendo golea novamente",
+      DataPublic: "13/08/2021",
+      Desc:
+        "Flamendo vence Olimpia por 4 a 1 em pleno estádio dos adversários.",
+      Criador: "Weberth Erik"
     }
   ];
 }
