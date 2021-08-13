@@ -1,6 +1,9 @@
 <div class="row">
   <div class="col s12">
-    <div *ngFor="let noticia of noticias" class="card horizontal">
+    <div
+      *ngFor="let noticia of noticias | paginate: { itemsPerPage: 3, currentPage: paginaAtual }; let i = index"
+      class="card horizontal"
+    >
       <div class="card-image">
         <img src="https://lorempixel.com/100/190/nature/6" />
       </div>
@@ -25,5 +28,10 @@
         </div>
       </div>
     </div>
+    <pagination-controls
+      (pageChange)="paginaAtual = $event"
+      previousLabel="Anterior"
+      nextLabel="Próximo"
+    ></pagination-controls>
   </div>
 </div>

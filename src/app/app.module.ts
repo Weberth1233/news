@@ -6,6 +6,7 @@ import { FooterComponent } from "../footer/footer.component";
 import { CardComponent } from "../card/card.component";
 import { ContentComponent } from "../content/content.component";
 import { SideBarComponent } from "../sidebar/sidebar.component";
+import { NgxPaginationModule } from "ngx-pagination";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { SideBarComponent } from "../sidebar/sidebar.component";
     ContentComponent,
     SideBarComponent
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule, NgxPaginationModule],
   providers: [],
   bootstrap: [AppComponent]
 })
