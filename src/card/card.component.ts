@@ -1,4 +1,5 @@
 import { Component, Input } from "@angular/core";
+import { News } from "../app/news.model";
 
 @Component({
   selector: "app-card",
@@ -7,6 +8,7 @@ import { Component, Input } from "@angular/core";
 })
 export class CardComponent {
   public paginaAtual = 1;
+
   //Meu filho tem um input que receb vazio
   @Input() noticias: any = [];
 }
